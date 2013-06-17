@@ -1,7 +1,9 @@
 <?php
 session_start();
 require '../model/Zakup.php'; 
-
+require '../controler/contRedirection.php';
+$redirection=new Redirection();
+$redirection->redirect();
 $zakup=new Zakup($_POST['produkt'],$_POST['sklep'],$_POST['ilosc'],$_POST['notatki']);
 $udane=$zakup->zapiszProdiktDoBazy();
 if($udane)

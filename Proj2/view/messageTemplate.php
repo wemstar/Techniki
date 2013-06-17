@@ -11,9 +11,9 @@
 			<div id="logo"><img src="images/logo.png"></div>
 		
 			<ul id="smallMenu">
-				<li><a href="../index.php">Strona glowna</a></li>
-				<li><a href="../view/viewLogin.php">Login</a></li>
-				<li><a href="../view/viewRegister.php">Rejestracja</a></li>
+				<li><a href="../view/main.php">Strona glowna</a></li>
+				<li><a href="../view/viewLoginUser.php">Login</a></li>
+				<li><a href="../view/viewAddUser.php">Rejestracja</a></li>
 				<li><a href="../contorler/logout.php">Logout</a></li>
 			</ul>
 		
@@ -23,7 +23,7 @@
 			<div id="leftContent"> <?php echo $leftContent ?> </div>
 			<div id="rightContent"> <?php echo $rightContent ?> </div>
 		</div>
-		<footer>Strona n</footer>
+		<footer>Strona &copy Sylwester Macura 2013</footer>
 	</div>
 </body>
 </html>

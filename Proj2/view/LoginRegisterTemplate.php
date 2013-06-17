@@ -15,5 +15,6 @@ $leftContent=' <form action="'.$dest. '"method="post">
 			</p> 
 		</fieldset> 
 	</form> ';
+
 require '../view/messageTemplate.php';
 ?>

@@ -13,7 +13,7 @@ body
 	color : rgb(255,255,255);
 }
 /*globla margin and padding*/
-#main,#content,#smallMenu,#smallMenu > li ,form,input,label,#banner
+footer,#main,#content,#smallMenu, li ,form,input,label,#banner,#leftContent,#rightContent
 {
 	margin: 10px ;
 	border-radius: 5px;
@@ -55,13 +55,18 @@ body
 }
 #smallMenu > li{
 	display: inline;
-	text-decoration: none;
+	
+}
+li
+{
+        text-decoration: none;
 	border-radius: 5px;
 	background: rgba(0,0,0,0.8);
 }
-#smallMenu > li:hover
+li:hover
 {
 	background: rgba(0,0,0,0.5);
+        
 }
 #banner
 {
@@ -73,11 +78,13 @@ body
         z-index: 100;
 }
 /*content*/
-#content
+#content,#leftContent,#rightContent,footer
 {
 	
 	background: rgba(0,0,0,0.4);
         overflow: hidden;
+        height: 100%;
+        color: white;
 }
 form
 {
@@ -98,8 +105,13 @@ textarea
 #leftContent
 {
     float: left;
+    width: 60%;
 }
 #rightContent
 {
     float:right;
+    width: 30%;
+}
+footer{
+    text-align: center;
 }
