@@ -13,7 +13,7 @@ body
 	color : rgb(255,255,255);
 }
 /*globla margin and padding*/
-footer,#main,#content,#smallMenu, li ,form,input,label,#banner,#leftContent,#rightContent
+td,footer,#main,#content,#smallMenu, li ,form,input,label,#banner,#leftContent,#rightContent
 {
 	margin: 10px ;
 	border-radius: 5px;
@@ -78,7 +78,7 @@ li:hover
         z-index: 100;
 }
 /*content*/
-#content,#leftContent,#rightContent,footer
+#content,#leftContent,#rightContent,footer,td
 {
 	
 	background: rgba(0,0,0,0.4);
@@ -105,12 +105,12 @@ textarea
 #leftContent
 {
     float: left;
-    width: 60%;
+    
 }
 #rightContent
 {
     float:right;
-    width: 30%;
+    
 }
 footer{
     text-align: center;

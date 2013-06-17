@@ -5,6 +5,7 @@
 	*/
 	require 'check.php';
 	require '../model/Database.php';
+        require '../view/RigthMenuContent.php';
 	$userBase=new DatabaseUsers();
 	
 	
@@ -13,14 +14,15 @@
 	session_start();
 	if($suces)
 	{
-		$leftContent="login good";
-               
+		$leftContent="<h2>Logowanie pomyslne</h2>";
+                $rightContent=$rightContent_Loged;
                 $_SESSION['user_name']=$_POST['user_name'];
                 $_SESSION['logged']=true;
 	}
 	else
 	{
-		$leftContent="login bad";
+		$leftContent="<h2>Błąd Logowania</h2>";
+                $rightContent=$rightContent_unLoged;
                 $_SESSION['logged']=false;
 	}
 	$userBase->db_close();

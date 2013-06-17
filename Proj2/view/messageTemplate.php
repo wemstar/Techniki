@@ -8,7 +8,7 @@
 <body>
 	<div id="main">
 		<div id="top">
-			<div id="logo"><img src="images/logo.png"></div>
+			<div id="logo"><img src="../view/images/logo.png"></div>
 		
 			<ul id="smallMenu">
 				<li><a href="../view/main.php">Strona glowna</a></li>
