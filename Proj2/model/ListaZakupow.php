@@ -49,7 +49,7 @@ class ListaZakupow
     
     
     private $stmt;
-
+   
     private $dataBase;
     private static $sql_dbname = '../model/produkts.db';
 }

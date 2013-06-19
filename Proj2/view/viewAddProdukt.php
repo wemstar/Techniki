@@ -1,4 +1,6 @@
 <?php
+require '../view/messageTemplate.php';
+require '../view/Content.php';
 session_start();
 if($_SESSION['logged'])
 {
@@ -34,12 +36,17 @@ if($_SESSION['logged'])
 			</p> 
 		</fieldset> 
 	</form> ';
-        require '../view/RigthMenuContent.php';
-	require '../view/messageTemplate.php';
+    
+    $con=new Content($leftContent, Content::getLogged());
+    
+    $view=new Template($con, $title);
+    $view->create();
+        
+	
 }
 else
 {
-    require '../view/viewLoginUser.php';
+    header('Location: ../view/LoginUser.php');
 }
 
 

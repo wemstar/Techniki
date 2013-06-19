@@ -1,6 +1,7 @@
 <?php
 session_start();
-require '../view/RigthMenuContent.php';
+require '../view/Content.php';
+require '../view/messageTemplate.php';
 $leftContent='
     <h2>Witaj na Stronie</h2>
     <p> Na tej stronie możesz przechowywać swoja liste zakupów.
@@ -13,12 +14,16 @@ $leftContent='
 $rightContent;
  if($_SESSION['logged'])
  {
-    $rightContent=$rightContent_Loged; 
+    $rightContent=  Content::getLogged(); 
  }
  else
  {
-     $rightContent=$rightContent_unLoged;
+     $rightContent=Content::getUnLogged();
  }
 
-require '../view/messageTemplate.php';
+$con=new Content($leftContent, $rightContent);
+
+$view=new Template($con, "Strona główna");
+ 
+$view->create();
 ?>
